@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <title><![CDATA[Span My Title]]></title>
+    <author><![CDATA[G.Cyrillus]]></author>
+    <version>1.0.0</version>
+    <date>14/03/2022</date>
+    <site>http://re7net.com</site>
+    <description><![CDATA[Encapsule les mots du titre dans des span avec une classe dédiée.]]></description>
+</document>
