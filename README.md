@@ -10,7 +10,7 @@ met chaque mot de votre titre dans un span
   <ol><li>Afficher un ien vers la racine de votre site</li>
     <li>Afficher le titre uniquement  </li>
   </ol>
-  <p>Ces options sont celles qu'offre pluxml à partir des themplate de votre thème. Il vous suffit de les remplacées.</p>
+  <p>Ces options sont celles qu'offre pluxml à partir des template de votre thème. Il vous suffit de remplacer le appels aux fonctions natives par celle du plugin.</p>
 
   <table>
     <tr><td></td><th>pour afficher le titre avec le lien vers la racine</th><th>Afficher le titre</th></tr>
