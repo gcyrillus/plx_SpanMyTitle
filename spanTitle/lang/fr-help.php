@@ -5,10 +5,10 @@
   <p>Aucune</p>
 <h3>Affichage Dans le théme</h3>
   <p>Pour afficher le titre de votre site avec un span par mot vous disposez de deux options </p>
-  <ol><li>Afficher un ien vers la racine de votre site</li>
+  <ol><li>Afficher un lien vers la racine de votre site</li>
     <li>Afficher le titre uniquement  </li>
   </ol>
-  <p>Ces options sont celles qu'offre pluxml à partir des themplate de votre thème. Il vous suffit de les remplacées.</p>
+  <p>Ces options sont celles qu'offre pluxml à partir des themplate de votre thème. Il vous suffit de remplacer les appels aux fonctions natives de PluXml par celle du Plugin..</p>
 
   <table>
     <tr><td></td><th>pour afficher le titre avec le lien vers la racine</th><th>Afficher le titre</th></tr>
