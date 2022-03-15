@@ -1,5 +1,5 @@
 # plx_SpanMyTitle
-Inclus chaque mots du titre de votre site dans un span avec une classe numérotée.
+Inclus chaque mots du titre de votre site dans un span avec une classe numérotée pour les styler individuellement.
 
 <h2>Aide du plugin</h2>
 	
