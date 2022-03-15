@@ -24,17 +24,17 @@ Inclus chaque mots du titre de votre site dans un span avec une classe num√©rot√
   
   Un exemple:
   ```
-  spnTtle-1 {
+  .spnTtle-1 {
      color:tomato;
      font-size:1.2em;
   }
   
-  spnTtle-2 {
+  .spnTtle-2 {
      color:gray;
      font-family: cursive;
   }
 
-  spnTtle-3 {
+  .spnTtle-3 {
      color:hotpink;
      font-weight:bold;
   }
