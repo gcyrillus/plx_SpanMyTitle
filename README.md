@@ -46,7 +46,7 @@ Inclus chaque mots du titre de votre site dans un span avec une classe num√©rot√
   ```
   span[class^='spnTtle']:nth-child(odd) {
      font-style:italic;
-     font-variant:smallcaps;
+     font-variant:small-caps;
   }
   
   ```
