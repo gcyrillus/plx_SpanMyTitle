@@ -12,11 +12,6 @@ Inclus chaque mots du titre de votre site dans un span avec une classe numérot�
   </ol>
   <p>Ces options sont celles qu'offre pluxml à partir des template de votre thème. Il vous suffit de remplacer le appels aux fonctions natives par celle du plugin.</p>
 
-  <table>
-    <tr><td></td><th>pour afficher le titre avec le lien vers la racine</th><th>Afficher le titre</th></tr>
-    <tr><td>rechercher</td><td><code>&lt;?php $plxShow->mainTitle('link'); ?></code></td><td><code>&lt;?php $plxShow->mainTitle(); ?></code></td></tr>
-    <tr><td>remplacer par</td> <td><code>&lt;?php if (eval($plxMotor->plxPlugins->callHook('spanMainLinkTitle'))) return; ?></code></td> <td> <code>&lt;?php if (eval($plxMotor->plxPlugins->callHook('spanMainTitle'))) return; ?></code></td></tr>
-  </table>
   <h4>Pour le titre du site</h4>
   <table>
     <tr><td></td><th>pour afficher le titre avec le lien vers la racine</th><th>Afficher le titre</th></tr>
