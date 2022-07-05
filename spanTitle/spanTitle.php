@@ -10,7 +10,8 @@
 		$this->addHook('IndexBegin', 'IndexBegin');
 		$this->addHook('spanMainLinkTitle', 'spanMainLinkTitle');
 		$this->addHook('spanMainTitle','spanMainTitle');
-        
+        $this->addHook('spanArtTitle','spanArtTitle');
+		
         # droits pour accèder à la page config.php du plugin
 		$this->setConfigProfil(PROFIL_ADMIN);
     }
@@ -37,7 +38,7 @@
 	public function spanit() {
 		global $plxMotor;
 		$spannedTitled="";
-		 $title = $plxMotor->aConf['title'];
+		$title = $plxMotor->aConf['title'];
 		$spanIt= explode(' ',$title);
 		$i=0;
 		foreach($spanIt as $word => $item) {
@@ -46,5 +47,34 @@
 		}
 		return $spannedTitled;
 	}
+	
+	
+	public function spanArtTitle($type = '')
+    {
+		global $plxMotor;
+		global $plxUtils;
+		$spannedTitled="";
+			$title = plxUtils::strCheck($plxMotor->plxRecord_arts->f('title'));
+			$spanIt= explode(' ',$title);
+			$i=0;
+			foreach($spanIt as $word => $item) {
+				$i++;
+				$spannedTitled .='<span class="spnArtTtle-'.$i.'">'.$item.'</span> ';	
+			}
+        if ($type == 'link') { # Type lien
+            $id = intval($plxMotor->plxRecord_arts->f('numero'));            
+            $url = $plxMotor->plxRecord_arts->f('url');
+            # On effectue l'affichage
+            echo '<a href="' . $plxMotor->urlRewrite('?article' . $id . '/' . $url) . '" title="' . $title . '">' .  $spannedTitled . '</a>';
+        } else { # Type normal
+            echo $title;
+        }
+    }
+	
+	
+	
+	
+	
+	
 }
 ?>
