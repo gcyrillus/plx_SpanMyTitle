@@ -62,7 +62,7 @@ Inclus chaque mots du titre de votre site dans un span avec une classe numérot�
   
   <h3>La feuille de style par défaut</h3>
   <p>Le plugin embarque une feuille de style par défaut, listant les 10 premiers mots et 5 couleurs</p>
-  <p><strong>Celle-ci est editable depuis la page des plugins en cliquant sur le lien <a href="parametres_plugincss.php?p=spanTitle">code CSS</a> du plugin.</strong></p>
+  <p><strong>Celle-ci est editable depuis la page des plugins en cliquant sur le lien <a href="#">code CSS</a> du plugin.</strong></p>
   <p>Voici à quoi elle ressemble</p>
   <pre><code>span[class="spnTtle-1"],
 span[class="spnTtle-6"] {
