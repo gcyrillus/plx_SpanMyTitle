@@ -21,7 +21,7 @@
   <table>
   <tr><td></td><th>pour afficher le titre de l'article avec le lien</th><th>Afficher le titre</th></tr>
     <tr><td>rechercher</td><td><code>&lt;?php $plxShow->artTitle('link'); ?></code></td><td><code>&lt;?php $plxShow->artTitle(); ?></code></td></tr>
-    <tr><td>remplacer par</td> <td><code>&lt;?php if (eval($plxMotor->plxPlugins->callHook('spanArtTitle'))) return; ?></code></td> <td> <code>&lt;?php if (eval($plxMotor->plxPlugins->callHook('spanArtTitle','link'))) return; ?></code></td></tr>
+    <tr><td>remplacer par</td> <td><code>&lt;?php if (eval($plxMotor->plxPlugins->callHook('spanArtTitle','link'))) return; ?></code></td> <td> <code>&lt;?php if (eval($plxMotor->plxPlugins->callHook('spanArtTitle'))) return; ?></code></td></tr>
   </table>
   
   <h3>La feuille de style par défaut</h3>
