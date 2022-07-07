@@ -7,11 +7,11 @@ Inclus chaque mots du titre de votre site(ou de vos articles, pages statiques) d
 <h3>Configuration</h3>
   <p>Aucune</p>
 <h3>Affichage Dans le théme</h3>
-  <p>Pour afficher le titre de votre site avec un span par mot vous disposez de deux options </p>
+  <p>Pour afficher le titre de votre site (ou d'un arrticle) avec un span par mot vous disposez de deux options </p>
   <ol><li>Afficher un lien vers la racine de votre site</li>
-    <li>Afficher le titre uniquement  </li>
+    <li>Afficher le titre uniquement (cette option est la seule disponible pour les titre de pages statiques) </li>
   </ol>
-  <p>Ces options sont celles qu'offre pluxml à partir des themplate de votre thème. Il vous suffit de remplacer les appels aux fonctions natives de PluXml par celle du Plugin..</p>
+  <p>Ces options sont celles qu'offre pluxml à partir des themplate de votre thème. Il vous suffit de remplacer les appels aux fonctions natives de PluXml par celle du Plugin. <small>(Voir les tableaux ci-dessous)</small></p>
   <h4>Pour le titre du site</h4>
   <table>
     <tr><td></td><th>pour afficher le titre avec le lien vers la racine</th><th>Afficher le titre</th></tr>
