@@ -11,6 +11,7 @@
 		$this->addHook('spanMainLinkTitle', 'spanMainLinkTitle');
 		$this->addHook('spanMainTitle','spanMainTitle');
         $this->addHook('spanArtTitle','spanArtTitle');
+        $this->addHook('spanStaticTitle','spanStaticTitle');
 		
         # droits pour accèder à la page config.php du plugin
 		$this->setConfigProfil(PROFIL_ADMIN);
@@ -48,7 +49,7 @@
 		return $spannedTitled;
 	}
 	
-	
+	#traite les titres des articles
 	public function spanArtTitle($type = '')
     {
 		global $plxMotor;
@@ -67,14 +68,24 @@
             # On effectue l'affichage
             echo '<a href="' . $plxMotor->urlRewrite('?article' . $id . '/' . $url) . '" title="' . $title . '">' .  $spannedTitled . '</a>';
         } else { # Type normal
-            echo $title;
+            echo $spannedTitled;
         }
-    }
-	
-	
-	
-	
-	
-	
+	}	
+
+	#traite les titres des pages statiques
+    public function spanStaticTitle()
+    {
+		global $plxMotor;
+		global $plxUtils;
+		$spannedTitled="";
+		$title = plxUtils::strCheck($plxMotor->aStats[$plxMotor->cible]['name']);
+		$spanIt= explode(' ',$title);
+			$i=0;	
+		foreach($spanIt as $word => $item) {
+			$i++;
+			$spannedTitled .='<span class="spnArtTtle-'.$i.'">'.$item.'</span> ';	
+		}		
+        echo $spannedTitled;
+    }	
 }
 ?>
