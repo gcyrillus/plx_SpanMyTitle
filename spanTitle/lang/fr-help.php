@@ -23,6 +23,13 @@
     <tr><td>rechercher</td><td><code>&lt;?php $plxShow->artTitle('link'); ?></code></td><td><code>&lt;?php $plxShow->artTitle(); ?></code></td></tr>
     <tr><td>remplacer par</td> <td><code>&lt;?php if (eval($plxMotor->plxPlugins->callHook('spanArtTitle','link'))) return; ?></code></td> <td> <code>&lt;?php if (eval($plxMotor->plxPlugins->callHook('spanArtTitle'))) return; ?></code></td></tr>
   </table>
+	
+  <h4>Pour les titres des pages statiques</h4>
+  <table>
+  <tr><td></td><th>Afficher le titre</th></tr>
+    <tr><td>rechercher</td><td><code>&lt;?php $plxShow->staticTitle(); ?></code></td></tr>
+    <tr><td>remplacer par</td><td> <code>&lt;?php if (eval($plxMotor->plxPlugins->callHook('spanStaticTitle'))) return; ?></code></td></tr>
+  </table>
   
   <h3>La feuille de style par défaut</h3>
   <p>Le plugin embarque une feuille de style par défaut, listant les 10 premiers mots et 5 couleurs</p>
